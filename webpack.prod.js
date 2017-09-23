@@ -5,7 +5,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const glob = require('glob');
+const glob = require('glob-all');
 const common = require('./webpack.common');
 
 module.exports = merge(common, {

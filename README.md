@@ -28,6 +28,7 @@ Basically, this project makes use of the following webpack features:
 * Serving bundled assets from memory
 
 #### In production mode
+* Unused CSS classes are striped out by PurifyCSS
 * Extracting css into a seperate file
 * Generating index.html according to a template
 * Injecting \<script> and \<link> tag into index.html
