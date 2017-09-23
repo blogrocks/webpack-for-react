@@ -10,7 +10,8 @@
     "build-vendor": "npm run clean && webpack --config vendor-bundles.webpack.prod.js",
     "build": "npm run build-vendor && NODE_ENV=production webpack --config webpack.prod.js",
     "dev-vendor": "npm run clean && webpack --config vendor-bundles.webpack.dev.js",
-    "start": "npm run dev-vendor && webpack-dev-server --open --config webpack.dev.js"
+    "start": "npm run dev-vendor && webpack-dev-server --open --config webpack.dev.js",
+    "bundle-out": "npm run dev-vendor && webpack --config webpack.dev.js"
   },
   "keywords": [],
   "author": "",
