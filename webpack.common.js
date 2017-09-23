@@ -9,7 +9,10 @@ module.exports = {
   entry: {
     // According to HtmlWebpackPlugin config, it's possible that
     // not all entry chunks are included into index.html
-    main: './src/index.js'
+    main: [
+      'react-hot-loader/patch',
+      './src/index.js'
+    ]
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
