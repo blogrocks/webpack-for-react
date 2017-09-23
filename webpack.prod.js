@@ -51,7 +51,15 @@ module.exports = merge(common, {
         test: /\.(css|scss)$/,
         use: ExtractTextPlugin.extract({
           use: [
-            'css-loader?minimize=true&localIdentName=purify_[hash:base64:10]',
+            {
+              loader: 'css-loader',
+              options: {
+                minimize: true,
+                camelCase: true,
+                modules: true,
+                localIdentName: 'purify_[hash:base64:10]'
+              }
+            },
             'sass-loader',
             'postcss-loader'
           ]

@@ -23,7 +23,14 @@ module.exports = merge(common, {
         test: /\.(css|scss)$/,
         use: [
           'style-loader',
-          'css-loader?localIdentName=[path][name]---[local]',
+          {
+            loader: 'css-loader',
+            options: {
+              camelCase: true,
+              modules: true,
+              localIdentName: '[path][name]__[local]--[hash:base64:5]'
+            }
+          },
           'sass-loader',
           'postcss-loader'
         ]
