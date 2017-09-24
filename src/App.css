@@ -18,6 +18,11 @@
   font-size: large;
 }
 
+.favorite-icon {
+  position: relative;
+  top: 4px;
+  left: 5px;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

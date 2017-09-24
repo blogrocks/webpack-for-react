@@ -24,6 +24,13 @@ module.exports = {
      */
     bootstrap: bootstrapConfig
   },
+  resolve: {
+    // Tell webpack what directories should be searched when resolving modules.
+    modules: [
+      path.resolve(__dirname, "assets"),
+      "node_modules"
+    ]
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index-template.html',
