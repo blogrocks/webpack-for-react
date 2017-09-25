@@ -27,6 +27,7 @@ module.exports = {
   resolve: {
     // Tell webpack what directories should be searched when resolving modules.
     modules: [
+      path.resolve(__dirname, "src"),
       path.resolve(__dirname, "assets"),
       "node_modules"
     ]

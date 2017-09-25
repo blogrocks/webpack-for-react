@@ -12,7 +12,7 @@ class App extends Component {
           <img src={logo} styleName="App-logo" alt="logo" />
           <h2>
             Welcome to React
-            <i className="material-icons" styleName="favorite-icon">favorite</i>
+            <i className="material-icons" styleName="favorite-icon">beach_access</i>
           </h2>
         </div>
         <p styleName="App-intro">
