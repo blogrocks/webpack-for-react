@@ -43,7 +43,7 @@ module.exports = merge(common, {
         whitelist: ['*purify*']
       }
     }),
-    new FaviconsWebpackPlugin('./logo.svg')
+    // new FaviconsWebpackPlugin('./logo.svg')
   ],
   module: {
     rules: [
